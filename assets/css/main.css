@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+@font-face {
+    font-family: 'NerdFont';
+    src: local('NerdFont'), url('/assets/fonts/NerdFont.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    color: white;
+    font-family: "NerdFont", "Quicksand";
+    font: bold;
+    background-image: url('/assets/image/background.png');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0;
+}
+
+header {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header *,
+section * {
+    animation: FadeFromUp 1s ease-in-out;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 2.5em;
+}
+
+.big-text {
+    text-align: center;
+    font-size: 2.5em;
+}
+
+.big-logo {
+    border-radius: 50%;
+    max-width: 320px;
+    margin: 15px;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.jc-center {
+    justify-content: center;
+}
+
+.ai-center {
+    align-items: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.col-8 {
+    width: 100%;
+    max-width: 800px;
+}
+
+.nerd-icon {
+    font-family: 'NerdFont';
+}
+
+.button {
+    margin-inline: 6.743px;
+    /* It's very important .743px without them it was trashly 😎😎😎😎😎😎 */
+}
+
+.card-logo {
+    aspect-ratio: 1/1;
+    width: 80%;
+    height: auto;
+    object-fit: contain;
+}
+
+footer {
+    padding-block: 20px;
+    background-color: rgb(21, 21, 36);
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+@keyframes FadeFromDown {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.card{
+    transition: all 0.4s ease-in-out;
+}
+
+.card:hover{
+    transform: scale(1.05);
+}
+
+/* Non-hovered cards */
+.blur{
+    transform: scale(0.95);
+    filter: blur(10px);
+}

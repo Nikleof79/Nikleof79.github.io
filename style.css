@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+body{
+    color: white;
+    font-family: "Quicksand";
+    font: bold;
+    margin: 0;
+}
+
+.big-avatar{
+    border-radius: 50%;
+    max-width: 320px;
+}
+
+header{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+header h1{
+    text-align: center;
+}
+
+em{
+    color: #bbb;
+}
+
+footer{ 
+    background-color: darkblue;
+    background: rgb(15,19,53); background: linear-gradient(90deg, rgba(15,19,53,1) 16%, rgba(26,37,137,1) 100%);
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.href{
+    color: rgb(0, 247, 255);
+    text-decoration: none;
+    transition: all 600ms ease-in-out;
+}
+
+@media (hover: hover){
+.href:hover{
+    color: rgb(0, 224, 153);
+}}
+
+.card{
+    max-width: 23rem;
+    margin: 1em;
+}
+.all-projects{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.text-center{
+    text-align: center;
+}
+.big-text{
+    font-size: 2rem;
+    font-weight: 600;
+}
